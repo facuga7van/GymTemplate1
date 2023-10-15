@@ -1,7 +1,13 @@
 import React from "react";
 import Carousel from "./components/Carousel";
 import Link from "next/link";
-import Head from "next/head";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "TrAd - Tratamiento de Adicciones",
+  description:
+    "Tratamientos de Adicciones ofrece un tratamiento con laser para personas que luchan con adicciones, para dejar de fumar y de consumir todo tipo de sustancias.",
+};
 
 export default function HomePage() {
   const dividerStyle = {
@@ -13,11 +19,11 @@ export default function HomePage() {
     padding: "1rem",
   };
 
+  
+
   return (
     <>
-      <Head>
-        <title>TrAd - Tratamiento de Adicciones</title>
-      </Head>
+
       <Carousel />
       <div>
         <div className="my-10">

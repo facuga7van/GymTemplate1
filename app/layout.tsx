@@ -8,9 +8,9 @@ import Whatsapp from "./components/Whatsapp";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TrAd",
+  title: "TrAd - Tratamiento de Adicciones",
   description:
-    "TrAd - Tratamientos en Adicciones ofrece un tratamiento con laser para personas que luchan con adicciones. Descubre cómo podemos ayudarte a recuperar tu vida",
+    "Tratamientos de Adicciones ofrece un tratamiento con laser para personas que luchan con adicciones, para dejar de fumar y de consumir todo tipo de sustancias.",
 };
 
 export default function RootLayout({

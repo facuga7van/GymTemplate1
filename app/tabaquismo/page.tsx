@@ -1,12 +1,15 @@
 import Link from "next/link";
-import Head from "next/head";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "TrAd - Tabaquismo",
+  description:
+    "Tratamientos de Adicciones ofrece un tratamiento con laser para personas que luchan con adicciones, para dejar de fumar y de consumir todo tipo de sustancias.",
+};
 const Tabaquismo = () => {
   return (
     <>
-      <Head>
-        <title>TrAd - Tabaquismo</title>
-      </Head>
+
       <div className="mb-10">
         <div className="relative shadow-md">
           <img
