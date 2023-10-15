@@ -1,9 +1,9 @@
 import React from "react";
-import Carousel from "./components/Carousel";
+import Carousel from "../components/Carousel";
 import Link from "next/link";
 import Head from "next/head";
 
-export default function HomePage() {
+export default function Home() {
   const dividerStyle = {
     width: "40%",
     borderTop: "2px solid #ccc",
