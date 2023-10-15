@@ -85,7 +85,7 @@ export default function ContactForm() {
             </h2>
           </div>
         </div>
-        <div className="mx-auto md:w-1/2 p-8 md:mx-5 rounded-lg shadow-3xl bg-white">
+        <div className="mx-auto md:w-1/2 p-8 md:mx-5 rounded-lg shadow-3xl bg-white" style={{ filter: "drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5))" }}>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div className="mb-3">
               <label htmlFor="name" className="block text-gray-700">
@@ -130,6 +130,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring"
+                style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}
               >
                 Enviar
               </button>
@@ -143,6 +144,7 @@ export default function ContactForm() {
         onRequestClose={() => setShowModal(false)}
         overlayClassName="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-start justify-center"
         className="bg-white max-w-10 p-8 rounded-md mt-[10rem] shadow-3xl"
+        
       >
         {/* Modal content here */}
         <h2 className="text-xl font-semibold mb-3 text-center">

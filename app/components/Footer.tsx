@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-300 pt-5">
-      <div className="bg-gray-100 text-gray-600 py-10">
+    <footer className="bg-gray-100 pt-5" style={{ filter: "drop-shadow(-3px -3px 2px rgba(0, 0, 0, 0.2))" }}>
+      <div className=" text-gray-600 py-8" >
       <div className="container mt-5 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="text-center md:text-left">

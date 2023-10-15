@@ -30,6 +30,7 @@ export default function Example() {
     <Disclosure
       as="nav"
       className="bg-[#f8f9fb] md:min-h-[150px] z-10 md:shadow-3xl sticky"
+      style={{ filter: "drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5))" }}
     >
       {({ open }) => (
         <>
@@ -86,12 +87,12 @@ export default function Example() {
                                 pathname.startsWith("/otrasadicciones") // Agrega otras condiciones aquí
                                 ? "text-[#01b774]"
                                 : "text-gray-400",
-                              "group flex flex-row text-center items-center rounded-md px-3 py-2 text-lg font-medium"
+                              "group flex flex-row text-center items-center rounded-md px-3 py-2 text-lg font-medium bg-left-bottom bg-gradient-to-r from-[#01b774] to-[#01b774] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] all duration-500 ease-out"
                             )}
                           >
                             Tratamiento
                             <svg
-                              className="w-2.5 h-2.5 ml-2.5"
+                              className="w-2.5 h-2.5 ml-2.5 "
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -116,7 +117,7 @@ export default function Example() {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                       >
-                        <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none top-[5.5rem]">
+                        <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none top-[5.5rem]" style={{ filter: "drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5))" }}>
                           <Menu.Item>
                             {({ active }) => (
                               <a

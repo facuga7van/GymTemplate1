@@ -44,7 +44,7 @@ export default function Carousel() {
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[100%] h-[450px] w-full m-auto relative group">
+    <div className="max-w-[100%] h-[250px] md:h-[450px] w-full m-auto relative group" style={{ filter: "drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5))" }}>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full bg-center bg-cover duration-500 relative"

@@ -12,7 +12,7 @@ export default function AboutPage() {
     <>
 
       <div className="mb-10">
-        <div className="relative shadow-md">
+        <div className="relative shadow-md" style={{ filter: "drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5))" }}>
           <img
             src="AboutUs.jpg"
             alt="Imagen para Nosotros"
@@ -50,9 +50,12 @@ export default function AboutPage() {
               Es una opción segura y sin contraindicaciones, siendo indoloro,
               inocuo y libre de efectos secundarios.
             </p>
-            <div className="mt-12">
-              <Link href="/contact" className="bg-blue-600 border border-blue-900 text-white rounded-md shadow-md py-2 px-4 text-2xl font-semibold hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">
-                Contáctanos
+            <div className="flex bg-blue-600 text-white min-w-[10rem] px-3 justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out" style={{ filter: "drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5))" }}>
+              <Link
+                href="/contact"
+                className="text-xl p-3"
+              >
+                Contactanos
               </Link>
             </div>
           </div>

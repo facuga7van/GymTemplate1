@@ -11,7 +11,7 @@ const Tabaquismo = () => {
     <>
 
       <div className="mb-10">
-        <div className="relative shadow-md">
+        <div className="relative shadow-md" style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}>
           <img
             src="smoking.jpg"
             alt="Imagen de Tabaquismo"
@@ -19,7 +19,7 @@ const Tabaquismo = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center md:mx-auto md:mt-12 mx-[2rem]">
+        <div className="md:flex justify-center items-center md:mx-auto md:mt-12 mx-[2rem]">
           <div className="hidden md:block mt-8">
             <img
               src="cigDraw.png"
@@ -54,7 +54,7 @@ const Tabaquismo = () => {
               la dependencia orgánica podrá realizar el periodo de
               deshabituación sin el llamado físico al consumo.
             </p>
-            <div className="flex justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out">
+            <div className="flex bg-blue-600 text-white min-w-[10rem] px-3 justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out" style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}>
               <Link
                 href="/contact"
                 className="text-xl p-3"
@@ -64,7 +64,7 @@ const Tabaquismo = () => {
             </div>
           </div>
         </div>
-        <div className="my-8 flex items-center justify-center bg-white flex-col shadow-lg rounded-lg p-8 md:mx-[10rem] mx-[2rem]">
+        <div className="my-8 flex items-center justify-center bg-white flex-col shadow-lg rounded-lg p-8 md:mx-[10rem] mx-[2rem]" style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}>
           <div className="font-serif text-2xl font-bold">¿Sabías qué?</div>
           <span className="text-lg">
             En muchas personas predomina la idea de que se puede dejar de fumar

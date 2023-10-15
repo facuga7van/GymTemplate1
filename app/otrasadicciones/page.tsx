@@ -19,7 +19,7 @@ const OtrasAdicciones = () => {
   return (
     <>
       <div className="mb-10">
-        <div className="relative shadow-md">
+        <div className="relative shadow-md" style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}>
           <img
             src="sobredosis.jpg"
             alt="Imagen de Adicciones"
@@ -76,7 +76,7 @@ const OtrasAdicciones = () => {
               la dependencia orgánica podrá realizar el periodo de
               deshabituación sin el llamado físico al consumo.
             </p>
-            <div className="flex justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out">
+            <div className="flex bg-blue-600 text-white min-w-[10rem] px-3 justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out" style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}>
               <Link
                 href="/contact"
                 className="text-xl p-3"
@@ -177,7 +177,7 @@ const OtrasAdicciones = () => {
               la dependencia orgánica podrá realizar el periodo de
               deshabituación sin el llamado físico al consumo.
             </p>
-            <div className="flex justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out">
+            <div className="flex bg-blue-600 text-white min-w-[10rem] px-3 justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out" style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}>
               <Link
                 href="/contact"
                 className="text-xl p-3"
