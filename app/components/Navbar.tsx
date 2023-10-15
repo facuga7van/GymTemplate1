@@ -99,7 +99,7 @@ export default function Example() {
                             >
                               <path
                                 stroke="currentColor"
-                                stroke-width="3"
+                                strokeWidth="3"
                                 d="m1 1 4 4 4-4"
                               />
                             </svg>
