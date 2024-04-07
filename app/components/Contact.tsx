@@ -50,16 +50,14 @@ export default function ContactForm() {
       <div className="md:flex justify-center items-center py-8 mx-auto md:mx-[10rem]">
         <div className="mx-auto md:w-1/2 p-8 md:mx-5">
           <h2 className="text-3xl font-semibold">
-            Recupera tu <span className="text-green-500">libertad</span>,
-            déjanos ayudarte.
+          El único <span className="text-red-500">entrenamiento</span> malo es el que no se hace. 
           </h2>
           <h2 className="text-3xl font-semibold">
-            Transforma tu <span className="text-green-500">vida</span>,
-            contáctanos hoy mismo.
+          El primer paso hacia un yo más <span className="text-red-500">fuerte</span> comienza aquí.
           </h2>
           <h2 className="text-3xl font-semibold">
-            Tu futuro sin adicciones comienza con un{" "}
-            <span className="text-green-500">mensaje</span>.
+          La decisión más importante es dar el primer paso,{" "}
+            <span className="text-red-500">contáctanos</span>.
           </h2>
           <div>
             <hr className="border-t-2" style={dividerStyle} />
@@ -71,7 +69,7 @@ export default function ContactForm() {
                 href="https://wa.me/message/72HUXVW3IQHYC1"
                 className="md:text-gray-800 text-[#01b774]  md:hover:text-[#01b774]"
               >
-                (+54) 9 11 3004-6330
+                (+54) 9 11 1234-1234
               </a>
             </h2>
             <h2 className="text-xl">
@@ -80,7 +78,7 @@ export default function ContactForm() {
                 href="mailto:Tradlaser@gmail.com"
                 className="text-[#01b774] md:text-gray-800 md:hover:text-[#01b774]"
               >
-                Tradlaser@gmail.com
+                gmailgmail@gmail.com
               </a>
             </h2>
           </div>

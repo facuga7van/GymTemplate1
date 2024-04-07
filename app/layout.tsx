@@ -8,9 +8,9 @@ import Whatsapp from "./components/Whatsapp";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TrAd - Tratamiento de Adicciones",
+  title: "Gimnasio - Gimnasio",
   description:
-    "Tratamientos de Adicciones ofrece un tratamiento con laser para personas que luchan con adicciones, para dejar de fumar y de consumir todo tipo de sustancias.",
+    "descripcion de gimnasio.",
 };
 
 export default function RootLayout({
@@ -23,8 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar/>
         <Whatsapp/>
-        <div className="bg-fixed">
-        </div>
+        <div className="bg-fixed"/>
         {children}
         <Footer/>
       </body>

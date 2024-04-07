@@ -15,9 +15,9 @@ const navigationFull = [
   { name: "Nosotros", href: "/about", current: false },
   { name: "Contacto", href: "/contact", current: false },
   { name: "FAQ", href: "/faq", current: false },
-  { name: "Tabaquismo", href: "/tabaquismo", current: false },
-  { name: "Alcoholismo", href: "/alcoholismo", current: false },
-  { name: "Otras Adicciones", href: "/otrasadicciones", current: false },
+  { name: "Musculacion", href: "/musculacion", current: false },
+  { name: "Crossfit", href: "/crossfit", current: false },
+  { name: "Spinning", href: "/spinning", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -50,9 +50,9 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start min-h-[100px]">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="max-w-[250px] "
-                    src="logo.jpg"
-                    alt="Logo TrAd"
+                    className="max-w-[200px] "
+                    src="logo.png"
+                    alt="Logo Gimnasio"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block md:flex md:flex-1 md:justify-end">
@@ -63,13 +63,13 @@ export default function Example() {
                         href={item.href}
                         className={classNames(
                           pathname == item.href
-                            ? "text-[#01b774]"
+                            ? "text-[#bf0600]"
                             : "text-gray-400",
                           "group flex flex-row text-center items-center rounded-md px-3 py-2 text-lg font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
-                        <span className="bg-left-bottom bg-gradient-to-r from-[#01b774] to-[#01b774] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] all duration-500 ease-out">
+                        <span className="bg-left-bottom bg-gradient-to-r from-[#bf0600] to-[#bf0600] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] all duration-500 ease-out">
                           {item.name}
                         </span>
                       </a>
@@ -82,15 +82,15 @@ export default function Example() {
                         <Menu.Button className="group text-gray-300 rounded-md px-3 py-2 text-lg font-medium all duration-300 ease-in-out ">
                           <span
                             className={classNames(
-                              pathname.startsWith("/tabaquismo") ||
-                                pathname.startsWith("/alcoholismo") ||
-                                pathname.startsWith("/otrasadicciones") // Agrega otras condiciones aquí
-                                ? "text-[#01b774]"
+                              pathname.startsWith("/musculacion") ||
+                                pathname.startsWith("/crossfit") ||
+                                pathname.startsWith("/spinning") 
+                                ? "text-[#bf0600]"
                                 : "text-gray-400",
-                              "group flex flex-row text-center items-center rounded-md px-3 py-2 text-lg font-medium bg-left-bottom bg-gradient-to-r from-[#01b774] to-[#01b774] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] all duration-500 ease-out"
+                              "group flex flex-row text-center items-center rounded-md px-3 py-2 text-lg font-medium bg-left-bottom bg-gradient-to-r from-[#bf0600] to-[#bf0600] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] all duration-500 ease-out"
                             )}
                           >
-                            Tratamiento
+                            Actividades
                             <svg
                               className="w-2.5 h-2.5 ml-2.5 "
                               aria-hidden="true"
@@ -121,39 +121,39 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="/tabaquismo"
+                                href="/musculacion"
                                 className={classNames(
                                   active ? "bg-gray-100 " : "",
                                   "block px-4 py-2 text-sm text-gray-700"
                                 )}
                               >
-                                Tabaquismo
+                                Musculacion
                               </a>
                             )}
                           </Menu.Item>
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="/alcoholismo"
+                                href="/crossfit"
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
                                 )}
                               >
-                                Alcoholismo
+                                Crossfit
                               </a>
                             )}
                           </Menu.Item>
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="/otrasadicciones"
+                                href="/spinning"
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
                                 )}
                               >
-                                Otras Adicciones
+                                Spinning
                               </a>
                             )}
                           </Menu.Item>
