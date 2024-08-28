@@ -44,21 +44,22 @@ export default function ContactForm() {
     <>
       <Carousel />
       <div className="my-10">
-        <h1 className="title text-center text-[3rem]">Contacto</h1>
+        <h1 className="title text-center text-[3rem]">Contact</h1>
       </div>
 
       <div className="md:flex justify-center items-center py-8 mx-auto md:mx-[10rem]">
         <div className="mx-auto md:w-1/2 p-8 md:mx-5">
-          <h2 className="text-3xl font-semibold">
-          El único <span className="text-red-500">entrenamiento</span> malo es el que no se hace. 
-          </h2>
-          <h2 className="text-3xl font-semibold">
-          El primer paso hacia un yo más <span className="text-red-500">fuerte</span> comienza aquí.
-          </h2>
-          <h2 className="text-3xl font-semibold">
-          La decisión más importante es dar el primer paso,{" "}
-            <span className="text-red-500">contáctanos</span>.
-          </h2>
+        <h2 className="text-3xl font-semibold">
+  The only <span className="text-red-500">bad workout</span> is the one that doesn't happen.
+</h2>
+<h2 className="text-3xl font-semibold">
+  The first step towards a <span className="text-red-500">stronger</span> you starts here.
+</h2>
+<h2 className="text-3xl font-semibold">
+  The most important decision is to take the first step,{" "}
+  <span className="text-red-500">contact us</span>.
+</h2>
+
           <div>
             <hr className="border-t-2" style={dividerStyle} />
           </div>
@@ -66,7 +67,7 @@ export default function ContactForm() {
             <h2 className="text-xl">
               Teléfono:{" "}
               <a
-                href="https://wa.me/message/72HUXVW3IQHYC1"
+                href="https://wa.me/message/xxxxxxxxxxxxx" // Here goes your link to wpp
                 className="md:text-gray-800 text-[#01b774]  md:hover:text-[#01b774]"
               >
                 (+54) 9 11 1234-1234
@@ -75,7 +76,7 @@ export default function ContactForm() {
             <h2 className="text-xl">
               Email:{" "}
               <a
-                href="mailto:Tradlaser@gmail.com"
+                href="mailto:gmailgmail@gmail.com" // here goes your mail
                 className="text-[#01b774] md:text-gray-800 md:hover:text-[#01b774]"
               >
                 gmailgmail@gmail.com
@@ -87,12 +88,12 @@ export default function ContactForm() {
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div className="mb-3">
               <label htmlFor="name" className="block text-gray-700">
-                Nombre
+                Name
               </label>
               <input
                 type="text"
                 id="name"
-                placeholder="Tu nombre"
+                placeholder="Your name"
                 name="from_name"
                 required
                 className="block w-full rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
@@ -100,7 +101,7 @@ export default function ContactForm() {
             </div>
             <div className="mb-3">
               <label htmlFor="email" className="block text-gray-700">
-                Dirección de mail
+                E-mail address
               </label>
               <input
                 type="email"
@@ -118,7 +119,7 @@ export default function ContactForm() {
               <textarea
                 rows={6}
                 id="message"
-                placeholder="Escribe tu mensaje."
+                placeholder="Write your message."
                 name="message"
                 required
                 className="block w-full rounded-md border border-gray-300 py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"
@@ -130,7 +131,7 @@ export default function ContactForm() {
                 className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring"
                 style={{ filter: "drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.2))" }}
               >
-                Enviar
+                Send
               </button>
             </div>
           </form>
@@ -144,22 +145,21 @@ export default function ContactForm() {
         className="bg-white max-w-10 p-8 rounded-md mt-[10rem] shadow-3xl"
         
       >
-        {/* Modal content here */}
         <h2 className="text-xl font-semibold mb-3 text-center">
-          ¡Correo enviado con <a className="text-green-500">éxito!</a>
+          <a className="text-green-500">Success!</a>
         </h2>
         <div>
             <hr className="" style={dividerStyle} />
           </div>
         <p className="text-md my-3 text-center mt-5">
-          Tu mensaje ha sido enviado correctamente.
+          Message sended.
         </p>
         <div className="flex justify-center mt-5 mx-[10rem] border rounded-lg borderad shadow-btn hover:scale-110  all duration-300 ease-in-out">
           <button
             className="  px-4 py-2 rounded-md  focus:outline-none focus:ring"
             onClick={() => setShowModal(false)}
           >
-            Cerrar
+            Close
           </button>
         </div>
       </ReactModal>
