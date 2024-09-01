@@ -5,6 +5,8 @@ import Link from "next/link";
 import Card from "./Card";
 import CardInstr from "./CardInstr";
 import useIntersection from "../hooks/useIntersection";
+import SheetsImages from '../hooks/drive'
+import SheetsData from "../hooks/Excel";
 
 export default function Home() {
   const dividerStyle = {
@@ -103,6 +105,17 @@ export default function Home() {
             <CardInstr title="Juan Perez" imageSrc="man.jpg" alt="Instructor" />
           </div>
       </div>
+      <div>
+      <SheetsData />
+      </div>
+      <div className="flex flex-col gap-12 items-center">
+      <h2 className="text-center title text-[2.5rem] ">Galeria</h2>
+      <div className="flex flex-col gap-6 max-w-[55%] items-center">
+          <SheetsImages />
+        </div>
+      </div>
+      
+      
     </>
   );
 }
