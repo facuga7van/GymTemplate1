@@ -50,7 +50,7 @@ export default function ContactForm() {
       <div className="md:flex justify-center items-center py-8 mx-auto md:mx-[10rem]">
         <div className="mx-auto md:w-1/2 p-8 md:mx-5">
         <h2 className="text-3xl font-semibold">
-  The only <span className="text-red-500">bad workout</span> is the one that doesn't happen.
+  The only <span className="text-red-500">bad workout</span> is the one that does not happen.
 </h2>
 <h2 className="text-3xl font-semibold">
   The first step towards a <span className="text-red-500">stronger</span> you starts here.
