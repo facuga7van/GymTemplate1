@@ -16,9 +16,9 @@ const navigationFull = [
   { name: "Nosotros", href: "/about", current: false },
   { name: "Contacto", href: "/contact", current: false },
   { name: "FAQ", href: "/faq", current: false },
-  { name: "Musculacion", href: "/musculacion", current: false },
-  { name: "Crossfit", href: "/crossfit", current: false },
-  { name: "Spinning", href: "/spinning", current: false },
+  { name: "Musculacion", href: "musculacion", current: false },
+  { name: "Crossfit", href: "crossfit", current: false },
+  { name: "Spinning", href: "spinning", current: false },
 ];
 
 function classNames(...classes: string[]) {
