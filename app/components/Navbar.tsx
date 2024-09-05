@@ -122,7 +122,7 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="GymTemplate1/musculacion"
+                                href="/musculacion"
                                 className={classNames(
                                   active ? "bg-gray-100 " : "",
                                   "block px-4 py-2 text-sm text-gray-700"
@@ -135,7 +135,7 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="GymTemplate1/crossfit"
+                                href="/crossfit"
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
@@ -148,7 +148,7 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="GymTemplate1/spinning"
+                                href="/spinning"
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
