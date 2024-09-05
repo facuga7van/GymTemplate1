@@ -10,6 +10,7 @@ const navigation = [
   // { name: "Contacto", href: "/contact", current: false },
   // { name: "FAQ", href: "/faq", current: false },
 ];
+
 const navigationFull = [
   { name: "Inicio", href: "/", current: true },
   { name: "Nosotros", href: "/about", current: false },
