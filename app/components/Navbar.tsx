@@ -5,14 +5,14 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Inicio", href: "/", current: true },
+  { name: "Inicio", href: "/GymTemplate1", current: true },
   // { name: "Nosotros", href: "/about", current: false },
   // { name: "Contacto", href: "/contact", current: false },
   // { name: "FAQ", href: "/faq", current: false },
 ];
 
 const navigationFull = [
-  { name: "Inicio", href: "/", current: true },
+  { name: "Inicio", href: "/GymTemplate1", current: true },
   { name: "Nosotros", href: "/about", current: false },
   { name: "Contacto", href: "/contact", current: false },
   { name: "FAQ", href: "/faq", current: false },
@@ -122,7 +122,7 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="/musculacion"
+                                href="GymTemplate1/musculacion"
                                 className={classNames(
                                   active ? "bg-gray-100 " : "",
                                   "block px-4 py-2 text-sm text-gray-700"
@@ -135,7 +135,7 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="/crossfit"
+                                href="GymTemplate1/crossfit"
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
@@ -148,7 +148,7 @@ export default function Example() {
                           <Menu.Item>
                             {({ active }) => (
                               <a
-                                href="/spinning"
+                                href="GymTemplate1/spinning"
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
                                   "block px-4 py-2 text-sm text-gray-700"
